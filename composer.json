@@ -1,0 +1,36 @@
+{
+    "name": "nebubit/php-helpers",
+    "description": "PHP helpers to support you in your new projects.",
+    "type": "library",
+    "keywords": [
+        "helpers",
+        "PHP helpers",
+        "PHP support library"
+    ],
+    "license": "MIT",
+    "require": {
+        "php": ">=5.5.9",
+        "symfony/var-dumper": "^3.4.6"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.8",
+        "squizlabs/php_codesniffer": "3.*"
+    },
+    "autoload": {
+        "files": [
+            "src/Support/helpers.php"
+        ],
+        "psr-4": {
+            "Nebubit\\Support\\": "src/Support/",
+            "Nebubit\\Support\\Tests\\": "tests/"
+        },
+        "exclude-from-classmap": [
+            "/tests/"
+        ]
+    },
+    "authors": [
+        {
+            "name": "Martin Tan"
+        }
+    ]
+}
